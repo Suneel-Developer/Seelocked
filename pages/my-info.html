@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SellLocked</title>
+
+    <!-- Font Awesome Icon Link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Cutome CSS & tailwind css  -->
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/my-info.css">
+</head>
+
+<body>
+    <!-- --------------------------- Header Start  -->
+    <header class="header" id="top">
+        <div class="header-container">
+            <div class="menu-toggle" id="toggleMenu">
+                <img src="../assets/toggle-icon.svg" alt="toggle-icon">
+            </div>
+            <a href="../index.html" class="logo-link">
+                <img src="../assets/logo.png" alt="SellLoacked Logo" class="logo">
+            </a>
+
+            <a href="./cart.html" class="navlink-mobile cart-link">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="cart-item">2</span>
+            </a>
+
+            <!-- Nav Links  -->
+            <ul class="nav-links">
+                <li><a href="../index.html" class="navlink"><i class="fa fa-home"></i></a></li>
+                <li><a href="../index.html" class="navlink">How It Works</a></li>
+                <li><a href="./faqs.html" class="navlink">FAQ</a></li>
+                <li><a href="./contact-us.html" class="navlink">Contact Us</a></li>
+                <li><a href="../index.html" class="navlink">Get Started Now</a></li>
+                <li>
+                    <a href="./cart.html" class="navlink cart-link">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-item">2</span>
+                    </a>
+                </li>
+            </ul>
+
+
+
+            <!-- Mobile Navigation Menu  -->
+            <div id="mobileMenu" class="mobileMenu hidden z-40">
+                <button id="closeMenu" class="text-white ml-auto text-xl">
+                    <i class="fa fa-times"></i>
+                </button>
+                <ul class="mobile-nav-links">
+                    <li><a href="../index.html" class="navlink text-white"><i class="fa fa-home"></i></a></li>
+                    <li><a href="../index.html" class="navlink text-white">How It Works</a></li>
+                    <li><a href="./faqs.html" class="navlink text-white">FAQ</a></li>
+                    <li><a href="./contact-us.html" class="navlink text-white">Contact Us</a></li>
+                    <li><a href="../index.html" class="navlink text-white">Get Started Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- --------------------------- Header End  -->
+
+
+
+    <!-- My Info Section Start  -->
+    <section class="my-info">
+        <div class="my-info-container">
+            <!-- Navigation  -->
+            <ul class="nav-tabs">
+                <li><a href="./cart.html" class="nav-item">Cart <span>></span></a></li>
+                <li><a href="#" class="nav-item text-[#d55227]">My Info <span>></span></a></li>
+                <li class="nav-item">Payment <span>></span></li>
+                <li class="nav-item">Confrim</li>
+            </ul>
+
+
+            <!-- My Info Form  -->
+
+            <h1 class="heading">My information</h1>
+
+            <form data-form="my-information" class="my-information-form">
+                <div>
+                    <h3 class="sub-heading">Enter your name and address</h3>
+
+                    <input type="text" class="input" name="first_name" autocomplete="off" placeholder="First Name *"
+                        maxlength="25" required>
+
+                    <input type="text" class="input" name="last" autocomplete="off" placeholder="Last Name *"
+                        maxlength="25" required>
+
+                    <input type="text" class="input" name="company_name" autocomplete="off"
+                        placeholder="Company Name (optional)" maxlength="50">
+
+
+                    <input type="text" class="input" name="address_one" autocomplete="off"
+                        placeholder="Address Line 1 *" required>
+
+                    <input type="text" class="input" name="address_two" autocomplete="off"
+                        placeholder="Address Line 2 (optional)" maxlength="50">
+
+                    <input type="text" class="input" name="myInfoZipCode" autocomplete="off"
+                        placeholder="ZIP Code * 00000 or 00000-0000" maxlength="10">
+
+
+                    <input type="text" class="input" name="town_name" autocomplete="off" placeholder="City *" required>
+
+                    <select class="custom-select bg-opacity-50" id="state" name="state_name" required>
+                        <option value="" disabled="" selected="">State *</option>
+                        <option value="AL">AL-Alabama</option>
+                        <option value="AK">AK-Alaska</option>
+                        <option value="AZ">AZ-Arizona</option>
+                        <option value="AR">AR-Arkansas</option>
+                        <option value="CA">CA-California</option>
+                        <option value="CO">CO-Colorado </option>
+                        <option value="CT">CT-Connecticut </option>
+                        <option value="DE">DE-Delaware </option>
+                        <option value="DC">DC-District of Columbia </option>
+                        <option value="FL"> FL-Florida </option>
+                        <option value="GA">GA-Georgia </option>
+                        <option value="HI"> HI-Hawaii </option>
+                        <option value="ID">ID-Idaho </option>
+                        <option value="IL">IL-Illinois </option>
+                        <option value="IN">IN-Indiana </option>
+                        <option value="IA"> IA-Iowa </option>
+                        <option value="KS">KS-Kansas </option>
+                        <option value="KY"> KY-Kentucky </option>
+                        <option value="LA"> LA-Louisiana </option>
+                        <option value="ME"> ME-Maine </option>
+                        <option value="MD"> MD-Maryland </option>
+                        <option value="MA"> MA-Massachusetts </option>
+                        <option value="MI"> MI-Michigan </option>
+                        <option value="MN">MN-Minnesota </option>
+                        <option value="MS">MS-Mississippi </option>
+                        <option value="MO"> MO-Missouri </option>
+                        <option value="MT"> MT-Montana </option>
+                        <option value="NE">NE-Nebraska </option>
+                        <option value="NV">NV-Nevada </option>
+                        <option value="NH">NH-New Hampshire </option>
+                        <option value="NJ"> NJ-New Jersey </option>
+                        <option value="NM">NM-New Mexico </option>
+                        <option value="NY">NY-New York </option>
+                        <option value="NC">NC-North Carolina </option>
+                        <option value="ND">ND-North Dakota </option>
+                        <option value="OH">OH-Ohio </option>
+                        <option value="OK">OK-Oklahoma </option>
+                        <option value="OR">OR-Oregon </option>
+                        <option value="PA">PA-Pennsylvania </option>
+                        <option value="RI">RI-Rhode Island </option>
+                        <option value="SC">SC-South Carolina </option>
+                        <option value="SD">SD-South Dakota </option>
+                        <option value="TN">TN-Tennessee </option>
+                        <option value="TX">TX-Texas </option>
+                        <option value="UT">UT-Utah </option>
+                        <option value="VT">VT-Vermont </option>
+                        <option value="VA"> VA-Virginia </option>
+                        <option value="WA">WA-Washington </option>
+                        <option value="WV">WV-West Virginia </option>
+                        <option value="WI">WI-Wisconsin </option>
+                        <option value="WY">WY-Wyoming </option>
+                    </select>
+
+                    <label class="label-disabled">United States</label>
+
+                    <div class="flex items-center text-sm gap-1 text-[#b2b5bb]">
+                        For other countries, please
+                        <a href="./contact-us.html" class="underline text-[#d55227]">contact us.</a>
+                    </div>
+
+                </div>
+
+                <div>
+                    <h3 class="sub-heading">What's your contact information?</h3>
+
+                    <input type="email" class="input" name="personal_email" autocomplete="off"
+                        placeholder="Email Address *" required>
+
+                    <input type="email" class="input" name="personal_email_confirmation" autocomplete="off"
+                        placeholder="Confirm Your Email Address *" required>
+
+                    <input type="text" class="input" name="phone_no" autocomplete="off" placeholder="Phone No. *"
+                        required>
+                </div>
+            </form>
+
+            <a href="./confrim-address.html" class="next-step-btn">Next step</a>
+
+        </div>
+    </section>
+    <!-- My Info Section End  -->
+
+
+    <!-- ------------------ Footer Start -->
+    <footer class="footer">
+
+        <div class="footer-container">
+            <div>
+                <h3 class="footer-title">Sell with Confidence!</h3>
+
+                <div class="flex gap-5">
+                    <a href="https://www.trustpilot.com/review/ibuylocked.com" class="footer-trustpilot"
+                        target="_blank">
+                        <div class="flex items-center gap-2 mb-2">
+                            <img src="../assets/trustpilot-white-logo.svg" alt="trustpilot-logo" class="w-[110px]">
+                            <span class="rated-text">| Rated 5.0</span>
+                        </div>
+
+                        <img src="../assets/trustpilot_stars.svg" alt="trustpilot_stars" class="h-10 mb-1">
+                        <p class="text-white text-[1em]">Based on <span class="underline">2484 reviews</span></p>
+                    </a>
+
+                    <a href="https://www.sellcell.com/blog/you-can-now-sell-locked-phones-here-at-sellcell/"
+                        target="_blank">
+                        <img src="../assets/logo-cellsell.png" alt="cellsell" class="cellsell-logo">
+                    </a>
+                </div>
+
+                <!-- top Arrow  -->
+                <div id="to-top-arrow" class="to-top-arrow">
+                    <a data-scroll data-options="{ &quot;easing&quot;: &quot;easeOutCubic&quot; }" href="#top">
+                        <i class="fas fa-arrow-up"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <h3 class="footer-title text-center md:text-right">About Us</h3>
+
+                <div class="flex flex-col md:flex-row gap-[6px] md:gap-24">
+                    <ul class="footer-menu">
+                        <li><a href="../index.html" class="footer-menu-item">Home</a></li>
+                        <li><a href="../index.html" class="footer-menu-item">How It Works</a></li>
+                        <li><a href="./contact-us.html" class="footer-menu-item">Contact Us</a></li>
+                        <li><a href="#" class="footer-menu-item">Blog</a></li>
+                    </ul>
+
+                    <ul class="footer-menu">
+                        <li><a href="./faqs.html" class="footer-menu-item">FAQ</a></li>
+                        <li><a href="./terms-condition.html" class="footer-menu-item">Terms and Conditions</a></li>
+                        <li><a href="./privacy-policy.html" class="footer-menu-item">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <p>© 2024 Global Guru Tech, LLC | All Rights Reserved</p>
+        </div>
+    </footer>
+    <!-- ------------------ Footer End -->
+
+
+
+
+
+    <!-- --------- JavaScript link  -->
+    <script src="../js/script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>

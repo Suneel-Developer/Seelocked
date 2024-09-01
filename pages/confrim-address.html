@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SellLoacked</title>
+
+    <!-- Font Awesome Icon Link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Cutome CSS & tailwind css  -->
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/confrim-address.css">
+</head>
+
+<body>
+    <!-- --------------------------- Header Start  -->
+    <header class="header" id="top">
+        <div class="header-container">
+            <div class="menu-toggle" id="toggleMenu">
+                <img src="../assets/toggle-icon.svg" alt="toggle-icon">
+            </div>
+            <a href="../index.html" class="logo-link">
+                <img src="../assets/logo.png" alt="SellLoacked Logo" class="logo">
+            </a>
+
+            <a href="./cart.html" class="navlink-mobile cart-link">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="cart-item">2</span>
+            </a>
+
+            <!-- Nav Links  -->
+            <ul class="nav-links">
+                <li><a href="../index.html" class="navlink"><i class="fa fa-home"></i></a></li>
+                <li><a href="../index.html" class="navlink">How It Works</a></li>
+                <li><a href="./faqs.html" class="navlink">FAQ</a></li>
+                <li><a href="./contact-us.html" class="navlink">Contact Us</a></li>
+                <li><a href="../index.html" class="navlink">Get Started Now</a></li>
+                <li>
+                    <a href="./cart.html" class="navlink cart-link">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-item">2</span>
+                    </a>
+                </li>
+            </ul>
+
+
+
+            <!-- Mobile Navigation Menu  -->
+            <div id="mobileMenu" class="mobileMenu hidden z-40">
+                <button id="closeMenu" class="text-white ml-auto text-xl">
+                    <i class="fa fa-times"></i>
+                </button>
+                <ul class="mobile-nav-links">
+                    <li><a href="../index.html" class="navlink text-white"><i class="fa fa-home"></i></a></li>
+                    <li><a href="../index.html" class="navlink text-white">How It Works</a></li>
+                    <li><a href="./faqs.html" class="navlink text-white">FAQ</a></li>
+                    <li><a href="./contact-us.html" class="navlink text-white">Contact Us</a></li>
+                    <li><a href="../index.html" class="navlink text-white">Get Started Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- --------------------------- Header End  -->
+
+
+
+    <section class="confrim-address">
+        <div class="confrim-address-container">
+
+            <!-- Navigation  -->
+            <ul class="nav-tabs">
+                <li><a href="./cart.html" class="nav-item">Cart <span>></span></a></li>
+                <li><a href="./cart.html" class="nav-item text-[#d55227]">My Info <span>></span></a></li>
+                <li class="nav-item">Payment <span>></span></li>
+                <li class="nav-item">Confrim</li>
+            </ul>
+
+            <h1 class="heading">My information</h1>
+            <h2 class="subheading">Please confirm your address</h2>
+            <p class="disc">We verify all addresses to assure fast and accurate delivery</p>
+
+            <h3>1 verified addresses</h3>
+
+            <div class="suggested-address">
+                <input type="radio" checked>
+                <ul>
+                    <li>15205 N KIERLAND BLVD</li>
+                    <li>15205 NORTH KIERLAND BLVD. SUITE 100</li>
+                    <li>SCOTTSDALE, AZ 85254-8169</li>
+                </ul>
+            </div>
+
+            <div class="btns-section">
+                <a href="./my-info.html">Edit</a>
+                <a href="./payment.html">Confrim</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ------------------ Footer Start -->
+    <footer class="footer">
+
+        <div class="footer-container">
+            <div>
+                <h3 class="footer-title">Sell with Confidence!</h3>
+
+                <div class="flex gap-5">
+                    <a href="https://www.trustpilot.com/review/ibuylocked.com" class="footer-trustpilot"
+                        target="_blank">
+                        <div class="flex items-center gap-2 mb-2">
+                            <img src="../assets/trustpilot-white-logo.svg" alt="trustpilot-logo" class="w-[110px]">
+                            <span class="rated-text">| Rated 5.0</span>
+                        </div>
+
+                        <img src="../assets/trustpilot_stars.svg" alt="trustpilot_stars" class="h-10 mb-1">
+                        <p class="text-white text-[1em]">Based on <span class="underline">2484 reviews</span></p>
+                    </a>
+
+                    <a href="https://www.sellcell.com/blog/you-can-now-sell-locked-phones-here-at-sellcell/"
+                        target="_blank">
+                        <img src="../assets/logo-cellsell.png" alt="cellsell" class="cellsell-logo">
+                    </a>
+                </div>
+
+                <!-- top Arrow  -->
+                <div id="to-top-arrow" class="to-top-arrow">
+                    <a data-scroll data-options="{ &quot;easing&quot;: &quot;easeOutCubic&quot; }" href="#top">
+                        <i class="fas fa-arrow-up"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <h3 class="footer-title text-center md:text-right">About Us</h3>
+
+                <div class="flex flex-col md:flex-row gap-[6px] md:gap-24">
+                    <ul class="footer-menu">
+                        <li><a href="../index.html" class="footer-menu-item">Home</a></li>
+                        <li><a href="../index.html" class="footer-menu-item">How It Works</a></li>
+                        <li><a href="./contact-us.html" class="footer-menu-item">Contact Us</a></li>
+                        <li><a href="#" class="footer-menu-item">Blog</a></li>
+                    </ul>
+
+                    <ul class="footer-menu">
+                        <li><a href="./faqs.html" class="footer-menu-item">FAQ</a></li>
+                        <li><a href="./terms-condition.html" class="footer-menu-item">Terms and Conditions</a></li>
+                        <li><a href="./privacy-policy.html" class="footer-menu-item">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <p>© 2024 Global Guru Tech, LLC | All Rights Reserved</p>
+        </div>
+    </footer>
+    <!-- ------------------ Footer End -->
+
+
+
+
+
+    <!-- --------- JavaScript link  -->
+    <script src="../js/script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>

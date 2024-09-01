@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: 0px;
+    /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, and Opera */
+}
+
+
+
+button{
+    border: none;
+    outline: none;
+}
+
+
+
+/* -------------------------------- Header Start  */
+
+.header {
+    padding: 12px 16px;
+    background: linear-gradient(to top, #fff, #eaf6ff);
+    border-bottom: 1px solid #eee;
+}
+
+.header .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 70px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links .navlink {
+    text-decoration: none;
+    color: #648fac;
+    font-weight: 400;
+    font-size: 18px;
+    transition: all .25s ease-in-out;
+}
+
+.nav-links .navlink:hover {
+    color: #d55227;
+}
+
+
+.cart-link {
+    position: relative;
+}
+
+.cart-link i {
+    font-size: 24px;
+}
+
+.cart-link .cart-item {
+    border-radius: 100%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+    right: -8px;
+    top: -12px;
+}
+
+.menu-toggle {
+    display: none;
+    margin-left: -10px;
+}
+
+.menu-toggle img {
+    height: 35px;
+}
+
+.navlink-mobile {
+    display: none;
+}
+
+
+
+/* -------------------------------- Header End  */
+
+
+
+
+
+/* ------------------------------------ Footer Start  */
+.footer {
+    background: #31424c url(../assets/footer.png) top center no-repeat;
+    background-size: 100% auto;
+    padding: 75px 16px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.footer-title {
+    color: #82bae0;
+    font-size: 1.2em;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+
+.to-top-arrow {
+    background-color: #d55227;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.6em;
+    height: 40px;
+    position: absolute;
+    right: 0px;
+    top: -95px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.to-top-arrow a {
+    color: #fff;
+    display: block;
+    height: 100%;
+}
+
+
+.footer-trustpilot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all ease-in-out .25s;
+    max-width: 210px;
+    width: 100%;
+}
+
+.footer-trustpilot:hover {
+    transform: translateY(-4px);
+}
+
+.footer-trustpilot .rated-text {
+    align-self: flex-end;
+    font-size: 16px;
+    font-weight: 600;
+    white-space: nowrap;
+    margin-top: 2px;
+    color: white;
+}
+
+
+.cellsell-logo {
+    transition: all .25s ease-in-out;
+    position: relative;
+    top: 0;
+    height: 64px;
+    margin-top: 4px;
+}
+
+.cellsell-logo:hover {
+    top: -4px;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    justify-content: right;
+}
+
+.footer-menu-item {
+    transition: all .25s ease-in-out;
+    color: white;
+    float: inline-end;
+}
+
+.footer-menu-item:hover {
+    color: #cfd6e7;
+}
+
+.footer-copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    max-width: 1200px;
+    margin: 60px auto 0;
+    padding: 15px 0;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+
+/* ------------------------------------ Footer End  */
+
+
+
+/* Media Query For Mobile Responsive  */
+
+
+
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .navlink-mobile {
+        display: flex;
+    }
+
+    .logo-link {
+        flex: 1;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .header .header-container {
+        gap: 10px;
+    }
+
+
+    .mobileMenu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background-color: #31424c;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        padding: 10px 20px 20px 20px;
+    }
+
+    .mobile-nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 100px;
+    }
+
+
+    .footer {
+        background-size: auto 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+    }
+
+    .footer-title {
+        text-align: center;
+    }
+
+    .footer-menu {
+        align-items: center;
+    }
+
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - SellLocked</title>
+
+    <!-- Font Awesome Icon Link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Cutome CSS & tailwind css  -->
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+</head>
+
+<body>
+    <!-- --------------------------- Header Start  -->
+    <header class="header" id="top">
+        <div class="header-container">
+            <div class="menu-toggle" id="toggleMenu">
+                <img src="../assets/toggle-icon.svg" alt="toggle-icon">
+            </div>
+            <a href="../index.html" class="logo-link">
+                <img src="../assets/logo.png" alt="SellLoacked Logo" class="logo">
+            </a>
+
+            <a href="./cart.html" class="navlink-mobile cart-link">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="cart-item">2</span>
+            </a>
+
+            <!-- Nav Links  -->
+            <ul class="nav-links">
+                <li><a href="../index.html" class="navlink"><i class="fa fa-home"></i></a></li>
+                <li><a href="../index.html" class="navlink">How It Works</a></li>
+                <li><a href="./faqs.html" class="navlink">FAQ</a></li>
+                <li><a href="#" class="navlink">Contact Us</a></li>
+                <li><a href="../index.html" class="navlink">Get Started Now</a></li>
+                <li>
+                    <a href="./cart.html" class="navlink cart-link">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-item">2</span>
+                    </a>
+                </li>
+            </ul>
+
+
+
+            <!-- Mobile Navigation Menu  -->
+            <div id="mobileMenu" class="mobileMenu hidden z-40">
+                <button id="closeMenu" class="text-white ml-auto text-xl">
+                    <i class="fa fa-times"></i>
+                </button>
+                <ul class="mobile-nav-links">
+                    <li><a href="../index.html" class="navlink text-white"><i class="fa fa-home"></i></a></li>
+                    <li><a href="../index.html" class="navlink text-white">How It Works</a></li>
+                    <li><a href="./faqs.html" class="navlink text-white">FAQ</a></li>
+                    <li><a href="#" class="navlink text-white">Contact Us</a></li>
+                    <li><a href="../index.html" class="navlink text-white">Get Started Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- --------------------------- Header End  -->
+
+
+
+
+    <!-- Contact US Section Start  -->
+
+    <section class="contact">
+        <h2 class="heading">Support</h2>
+
+        <div class="contact-container">
+            <div class="card">
+                <a href="./faqs.html" class="card-row">
+                    <img src="../assets/comment.png" alt="comment" class="card-mg">
+                    <h3 class="card-title">Frequently Asked Questions</h3>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="./contact-form.html" class="card-row">
+                    <img src="../assets/gmail.png" alt="gmail" class="card-mg">
+                    <h3 class="card-title">Send us a message</h3>
+                </a>
+            </div>
+
+            <div class="card cursor-default">
+                <div class="card-row inactive">
+                    <img src="../assets/phone.png" alt="phone" class="card-mg">
+                    <h3 class="card-title">No phone (use email)</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="no-phone-container">
+            <h2 class="no-phone-header">Why no phone number?</h2>
+            <p class="no-phone-content">
+                Phone is an outdated and inefficient means of communication.
+                Almost all questions are answered on our FAQ page. <br>
+                If you can not find the answer to your question, please send us a message and we will reply back to you
+                as soon as we can.
+            </p>
+        </div>
+    </section>
+    <!-- Contact US Section End  -->
+
+
+
+    <!-- ------------------ Footer Start -->
+    <footer class="footer">
+
+        <div class="footer-container">
+            <div>
+                <h3 class="footer-title">Sell with Confidence!</h3>
+
+                <div class="flex gap-5">
+                    <a href="https://www.trustpilot.com/review/ibuylocked.com" class="footer-trustpilot"
+                        target="_blank">
+                        <div class="flex items-center gap-2 mb-2">
+                            <img src="../assets/trustpilot-white-logo.svg" alt="trustpilot-logo" class="w-[110px]">
+                            <span class="rated-text">| Rated 5.0</span>
+                        </div>
+
+                        <img src="../assets/trustpilot_stars.svg" alt="trustpilot_stars" class="h-10 mb-1">
+                        <p class="text-white text-[1em]">Based on <span class="underline">2484 reviews</span></p>
+                    </a>
+
+                    <a href="https://www.sellcell.com/blog/you-can-now-sell-locked-phones-here-at-sellcell/"
+                        target="_blank">
+                        <img src="../assets/logo-cellsell.png" alt="cellsell" class="cellsell-logo">
+                    </a>
+                </div>
+
+                <!-- top Arrow  -->
+                <div id="to-top-arrow" class="to-top-arrow">
+                    <a data-scroll data-options="{ &quot;easing&quot;: &quot;easeOutCubic&quot; }" href="#top">
+                        <i class="fas fa-arrow-up"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <h3 class="footer-title text-center md:text-right">About Us</h3>
+
+                <div class="flex flex-col md:flex-row gap-[6px] md:gap-24">
+                    <ul class="footer-menu">
+                        <li><a href="../index.html" class="footer-menu-item">Home</a></li>
+                        <li><a href="../index.html" class="footer-menu-item">How It Works</a></li>
+                        <li><a href="#" class="footer-menu-item">Contact Us</a></li>
+                        <li><a href="#" class="footer-menu-item">Blog</a></li>
+                    </ul>
+
+                    <ul class="footer-menu">
+                        <li><a href="./faqs.html" class="footer-menu-item">FAQ</a></li>
+                        <li><a href="./terms-condition.html" class="footer-menu-item">Terms and Conditions</a></li>
+                        <li><a href="./privacy-policy.html" class="footer-menu-item">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <p>© 2024 Global Guru Tech, LLC | All Rights Reserved</p>
+        </div>
+    </footer>
+    <!-- ------------------ Footer End -->
+
+
+
+
+
+    <!-- --------- JavaScript link  -->
+    <script src="../js/script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</body>
+
+</html>

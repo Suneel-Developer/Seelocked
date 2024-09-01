@@ -1,0 +1,176 @@
+.my-info {
+    padding: 50px 16px;
+}
+
+.my-info-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-tabs {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.nav-item {
+    color: #8a8887;
+    font-weight: 500;
+    white-space: nowrap;
+    font-size: 1em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-item span {
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+
+.heading {
+    color: #d55227;
+    font-size: 2.2em;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.my-information-form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.sub-heading {
+    color: #222;
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.my-information-form .input {
+    display: block;
+    width: 100%;
+    height: 52px;
+    background: none;
+    border-radius: .5rem;
+    outline: none;
+    padding: 1.25rem;
+    border: 1px solid #c0bebe;
+    margin-bottom: 30px;
+    transition: color .25s ease-in-out;
+}
+
+
+.my-information-form .input:hover {
+    border: 1px solid #d55227;
+}
+
+
+.custom-select {
+    position: relative;
+    height: 52px;
+    border: 1px solid #c0bebe;
+    border-radius: .5rem;
+    display: block;
+    width: 100%;
+    padding: 0 1.25rem;
+    transition: color .25s ease-in-out;
+    outline: none;
+    margin-bottom: 30px;
+}
+
+
+.custom-select:hover {
+    border: 1px solid #d55227;
+}
+
+.custom-select::-ms-expand {
+    display: none;
+}
+
+.custom-select option {
+    padding: 5px;
+}
+
+.label-disabled {
+    height: 52px;
+    border-radius: .5rem;
+    display: block;
+    width: 100%;
+    padding: .2rem 1.25rem;
+    margin-bottom: 4px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    color: #788292;
+    font-size: 16px;
+}
+
+.next-step-btn {
+    background-color: #d55227;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    transition: all .25s ease-in-out;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.next-step-btn:hover {
+    background-color: #ff4900;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+
+    .my-info-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .heading {
+        font-size: 2em;
+        text-align: left;
+        align-self: self-start;
+        display: flex;
+    }
+
+    .my-information-form {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .sub-heading {
+        font-size: 1em;
+    }
+
+    .nav-tabs {
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .nav-item {
+        font-size: .8em;
+    }
+
+    .nav-item span {
+        font-size: 1em;
+    }
+
+}

@@ -1,0 +1,136 @@
+.contact-form {
+    padding: 50px 16px 100px;
+}
+
+.contact-form-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.heading {
+    color: #d55227;
+    font-size: 2.2em;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.disc {
+    font-size: 14px;
+    margin-bottom: 40px;
+    max-width: 800px;
+
+}
+
+.sub-heading {
+    color: #222;
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.my-information-form{
+    max-width: 800px;
+}
+
+.my-information-form .input {
+    display: block;
+    width: 100%;
+    height: 52px;
+    background: none;
+    border-radius: .5rem;
+    outline: none;
+    padding: 1.25rem;
+    border: 1px solid #c0bebe;
+    margin-bottom: 30px;
+    transition: color .25s ease-in-out;
+}
+
+.my-information-form textarea {
+    display: block;
+    width: 100%;
+    height: 120px;
+    background: none;
+    border-radius: .5rem;
+    outline: none;
+    padding: 1.25rem;
+    border: 1px solid #c0bebe;
+    margin-bottom: 30px;
+    transition: color .25s ease-in-out;
+    resize: none;
+}
+
+.my-information-form textarea:hover {
+    border: 1px solid #d55227;
+}
+
+.my-information-form .input:hover {
+    border: 1px solid #d55227;
+}
+
+
+.custom-select {
+    position: relative;
+    height: 52px;
+    border: 1px solid #c0bebe;
+    border-radius: .5rem;
+    display: block;
+    width: 100%;
+    padding: 0 1.25rem;
+    transition: color .25s ease-in-out;
+    outline: none;
+    margin-bottom: 30px;
+}
+
+
+.custom-select:hover {
+    border: 1px solid #d55227;
+}
+
+.custom-select::-ms-expand {
+    display: none;
+}
+
+.custom-select option {
+    padding: 5px;
+}
+
+
+.next-step-btn {
+    background-color: #d55227;
+        border-radius: 6px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 1.2rem;
+        padding: 10px 15px;
+        transition: all .25s ease-in-out;
+        width: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        outline: none;
+        border: none;
+}
+
+
+.next-step-btn:hover{
+    background-color: #ff4900;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .heading {
+        font-size: 2em;
+        text-align: left;
+        align-self: self-start;
+        display: flex;
+    }
+
+    .sub-heading {
+        font-size: 1em;
+    }
+
+
+}

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SellLocked</title>
+
+    <!-- Font Awesome Icon Link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS & Tailwind CSS  -->
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/offer-summary.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <!-- --------------------------- Header Start  -->
+    <header class="header" id="top">
+        <div class="header-container">
+            <div class="menu-toggle" id="toggleMenu">
+                <img src="../assets/toggle-icon.svg" alt="toggle-icon">
+            </div>
+
+            <a href="../index.html" class="logo-link">
+                <img src="../assets/logo.png" alt="SellLoacked Logo" class="logo">
+            </a>
+
+            <a href="./cart.html" class="navlink-mobile cart-link">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="cart-item">2</span>
+            </a>
+
+            <!-- Nav Links  -->
+            <ul class="nav-links">
+                <li><a href="../index.html" class="navlink"><i class="fa fa-home"></i></a></li>
+                <li><a href="../index.html" class="navlink">How It Works</a></li>
+                <li><a href="./faqs.html" class="navlink">FAQ</a></li>
+                <li><a href="./contact-us.html" class="navlink">Contact Us</a></li>
+                <li><a href="../index.html" class="navlink">Get Started Now</a></li>
+                <li>
+                    <a href="./cart.html" class="navlink cart-link">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-item">2</span>
+                    </a>
+                </li>
+            </ul>
+
+
+
+            <!-- Mobile Navigation Menu  -->
+            <div id="mobileMenu" class="mobileMenu hidden z-40">
+                <button id="closeMenu" class="text-white ml-auto text-xl">
+                    <i class="fa fa-times"></i>
+                </button>
+                <ul class="mobile-nav-links">
+                    <li><a href="../index.html" class="navlink text-white"><i class="fa fa-home"></i></a></li>
+                    <li><a href="../index.html" class="navlink text-white">How It Works</a></li>
+                    <li><a href="./faqs.html" class="navlink text-white">FAQ</a></li>
+                    <li><a href="./contact-us.html" class="navlink text-white">Contact Us</a></li>
+                    <li><a href="../index.html" class="navlink text-white">Get Started Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- --------------------------- Header End  -->
+
+
+
+
+
+
+
+    <section class="offer-summary">
+        <div class="offer-sumamry-container">
+            <div class="left-side">
+                <div>
+                    <h2 class="heading">Offer Summary</h2>
+                    <p class="disc">
+                        Please give us a few details about your device so that we can give you an accurate quote. Select
+                        from the options below and your offer will update accordingly.
+                    </p>
+
+                    <h3 class="question-heading">Does your device power on and boot up normally?</h3>
+                    <div class="mb-4 flex gap-4">
+                        <button id="power-yes" class="btn-option">Yes</button>
+                        <button id="power-no" class="btn-option">No</button>
+                    </div>
+                </div>
+
+                <div id="yes-options" class="hidden">
+                    <div class="mb-5">
+                        <h2 class="question-heading">Select Carrier</h2>
+                        <ul class="grid grid-cols-2 md:grid-cols-3 gap-3">
+                            <li class="select-carrier">
+                                <img id="carrier-unlocked" class="carrier-option" src="../assets/unlocked-logo.png"
+                                    alt="unlocked-logo">
+                            </li>
+
+                            <li class="select-carrier">
+                                <img id="carrier-verizon" class="carrier-option" src="../assets/verizon-logo.png"
+                                    alt="verizon-logo">
+                            </li>
+
+                            <li class="select-carrier">
+                                <img id="carrier-att" class="carrier-option" src="../assets/ATT.png" alt="ATT">
+                            </li>
+
+                            <li class="select-carrier">
+                                <img id="carrier-tmobile" class="carrier-option" src="../assets/tmobile-logo.png"
+                                    alt="tmobile-logo">
+                            </li>
+
+                            <li class="select-carrier">
+                                <img id="carrier-sprint" class="carrier-option" src="../assets/sprint-logo.png"
+                                    alt="sprint-logo">
+                            </li>
+
+                            <li class="select-carrier">
+                                <img id="carrier-xfinity" class="carrier-option" src="../assets/xfinity-logo.png"
+                                    alt="xfinity-logo">
+                            </li>
+
+                            <li class="select-carrier">
+                                <img id="carrier-other" class="carrier-option" src="../assets/Other.png" alt="Other">
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="storage-options" class="hidden mb-5">
+                        <h2 class="question-heading">Select Storage</h2>
+                        <div class="flex gap-2 md:gap-4 flex-wrap" id="storage-options">
+                            <button class="storage-option btn-option">128GB</button>
+                            <button class="storage-option btn-option">256GB</button>
+                            <button class="storage-option btn-option">512GB</button>
+                        </div>
+                    </div>
+
+                    <div id="condition-options" class="hidden mb-5">
+                        <h2 class="question-heading">Select Condition</h2>
+                        <ul class="flex gap-2 gap-4 overflow-x-auto no-scrollbar">
+                            <li class="condition-option btn-option">New</li>
+                            <li class="condition-option btn-option">Mint/Good</li>
+                            <li class="condition-option btn-option">Poor</li>
+                            <li class="condition-option btn-option">Cracked</li>
+                            <li class="condition-option btn-option">LCD Damage</li>
+                        </ul>
+                    </div>
+
+                    <div id="brand-new-options" class="hidden select-conditions">
+                        <h2 class="question-heading">Brand New</h2>
+                        <p class="disc">Please select one of the following:</p>
+                        <div class="flex gap-2 md:gap-4 mb-4 flex-wrap">
+                            <button id="new-factory-sealed" class="new-option">Factory Sealed</button>
+                            <button id="new-open-box" class="new-option">Open Box</button>
+                        </div>
+
+                        <div id="factory-sealed-options" class="hidden">
+                            <h2 class="question-heading">Factory Sealed</h2>
+                            <p class="disc">
+                                A device in this condition should be brand new and factory sealed in its original
+                                packaging.
+                                It should not be resealed, activated, or opened. Refurbished devices do not fall under
+                                this
+                                category. In short:
+                            </p>
+                            <ul class="option-listed">
+                                <li>Brand new and never opened</li>
+                                <li>Not activated</li>
+                                <li>In original, undamaged packaging with matching IMEI/serial numbers</li>
+                            </ul>
+                        </div>
+
+                        <div id="open-box-options" class="hidden">
+                            <h2 class="question-heading">Open Box</h2>
+                            <p class="disc">
+                                A device in this condition must still be brand new and fully functional in its original
+                                retail packaging, but does not need to be sealed. Refurbished devices and devices in
+                                packaging designed by the carrier (or any non-OEM packaging) do not fall under this
+                                condition. In short:
+                            </p>
+                            <ul class="option-listed">
+                                <li>Brand new but opened and/or activated</li>
+                                <li>Must still have original plastic/sticker covering the device itself (if this plastic
+                                    has been removed or reapplied, please do not select this condition)</li>
+                                <li>No scratches (including the smallest micro-scratches) or any signs of use</li>
+                                <li>100% battery health and 0 battery charge cycles</li>
+                                <li>In original, undamaged packaging with matching IMEI/serial numbers and unused
+                                    accessories</li>
+                            </ul>
+
+                            <h3 class="question-heading mt-4">Has the device ever been used?</h3>
+                            <div class="mt-4 flex gap-4">
+                                <button id="yes-button" class="btn-option">Yes</button>
+                                <button id="no-button" class="btn-option">No</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="mint-good-options" class="hidden select-conditions">
+                        <h3 class="question-heading">Mint/Good Condition</h3>
+                        <p class="disc">
+                            A device in this condition should be fully functional with light to no signs of use.
+                            Additionally, the following should be true:
+                        </p>
+                        <ul class="option-listed">
+                            <li>No excessive or deep scratches</li>
+                            <li>No scuffs or dents on the frame</li>
+                            <li>No cracked or bent frames</li>
+                            <li>No cracks, chips, or LCD damage (i.e. burns, spots, lines, etc.)</li>
+                            <li>All parts are 100% original</li>
+                            <li>Battery health is above 80%</li>
+                        </ul>
+                        <p class="disc mt-4 mb-0 border border-[#eee] p-3 rounded">
+                            Note: For devices with an after-market or non-original screen, please select "LCD Damage" as
+                            its condition
+                        </p>
+                    </div>
+
+                    <div id="poor-options" class="hidden select-conditions">
+                        <h3 class="question-heading">Poor Condition</h3>
+                        <p class="disc">
+                            A device in this condition is fully functional with more visible signs of use. This can
+                            include some deep scratches and more excessive wear. For devices with extreme
+                            scratching/wear, please choose "Cracked" as its condition. Additionally, the following
+                            should be true:
+                        </p>
+                        <ul class="option-listed">
+                            <li>No cracks, chips, or LCD damage (i.e. burns, spots, lines, etc.)</li>
+                            <li>No bends or cracks on the frame</li>
+                            <li>All parts are 100% original</li>
+                            <li>Battery health is above 80%</li>
+                        </ul>
+                        <p class="disc mt-4 mb-0 border border-[#eee] p-3 rounded">
+                            Note: For devices with an after-market or non-original screen, please select "LCD Damage" as
+                            its condition.
+                        </p>
+                    </div>
+
+                    <div id="cracked-options" class="hidden select-conditions">
+                        <h3 class="question-heading">Cracked</h3>
+                        <p class="disc">
+                            A device in this condition must be fully functional but with screen damage. This includes:
+                        </p>
+                        <ul class="option-listed">
+                            <li>Screen cracks</li>
+                            <li>Small chips</li>
+                            <li>Dead pixels and LCD burns</li>
+                            <li>Excessive scratches</li>
+                        </ul>
+                        <p class="disc mt-4 mb-0 border border-[#eee] p-3 rounded">
+                            Note: For devices with larger chips or screen separation, please choose "LCD Damage" as its
+                            condition.
+                        </p>
+
+                        <div class="flex gap-2 mt-4 flex-wrap">
+                            <button class="btns-option" id="front-btn">Front</button>
+                            <button class="btns-option" id="back-btn">Back</button>
+                            <button class="btns-option" id="both-btn">Both</button>
+                        </div>
+
+                        <div id="back-info" class="hidden">
+                            <p class="disc">Which part of the back is cracked or severely scratched?</p>
+                            <div class="flex gap-2 mt-4 flex-wrap">
+                                <button class="btns-option">camera lens</button>
+                                <button class="btns-option">Glassed</button>
+                                <button class="btns-option">Both</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="lcd-damage-options" class="hidden select-conditions">
+                        <h3 class="question-heading">LCD Damage</h3>
+                        <p class="dsic">
+                            A device under this category can have any kind of damage to its LCD (i.e. burns, spots,
+                            lines, etc.) and/or front glass, but must still be otherwise fully functional. Additionally:
+                        </p>
+                        <ul class="option-listed">
+                            <li>
+                                Touch damage is OK, but if we are unable to test your device for basic functionality
+                                such as "Facial Recognition" or making a phone call, we may reach out to you with a
+                                revised quote.
+                            </li>
+                            <li>
+                                After-market screens are OK (whether damaged or not).
+                            </li>
+                            <li>
+                                No bends or cracks on the frame.
+                            </li>
+
+                            <li>
+                                Battery health must be above 80 percent.
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div id="no-options" class="hidden">
+                    <!-- Content for when the device does not power on -->
+                    <div class="mt-8">
+                        <h2 class="text-xl font-semibold mb-4">Does your device have any parts missing?</h2>
+                        <div class="mt-4 flex space-x-4">
+                            <button id="missing-yes" class="btn-option">Yes</button>
+                            <button id="missing-no" class="btn-option">No</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <h2 class="question-heading">Current Offer</h2>
+                <img src="../assets/AppleiPhone13.webp" alt="AppleiPhone13" class="mx-auto h-[300px] mb-4">
+
+                <ul class="characteristics">
+                    <li><b>Model: </b>Apple-iPhone 15 Pro</li>
+                    <li><b>Status: </b>Activation Locked</li>
+                    <li><b>Carrier: </b><span id="carrier-selected">N/A</span></li>
+                    <li><b>Storage: </b><span id="storage-selected">N/A</span></li>
+                    <li><b>Condition: </b><span id="condition-selected">N/A</span></li>
+                    <li><b>Damages: </b>None</li>
+                </ul>
+
+
+                <div class="mt-6 hidden" id="current-offer">
+                    <p class="text-[#464646] text-[15px]">Based on the information provided above, our current offer for
+                        your device is:</p>
+                    <h2 class="text-3xl font-medium my-6 text-[#d55227] text-center">$ 340.00</h2>
+
+                    <div class="flex items-center gap-2">
+                        <img src="../assets/find-my.svg" alt="find-my">
+                        <p class="text-sm text-[#333]">Please turn off Find-My-iPhone before shipping your device.</p>
+                    </div>
+                    <a href="./my-info.html" class="btn-primary">Accept Offer</a>
+                    <p class="text-[#464646] text-[15px]">We'll pay the quoted value for your device or return it for
+                        free.</p>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+        <!-- ------------------ Footer Start -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div>
+                    <h3 class="footer-title">Sell with Confidence!</h3>
+    
+                    <div class="flex gap-5">
+                        <a href="https://www.trustpilot.com/review/ibuylocked.com" class="footer-trustpilot"
+                            target="_blank">
+                            <div class="flex items-center gap-2 mb-2">
+                                <img src="../assets/trustpilot-white-logo.svg" alt="trustpilot-logo" class="w-[110px]">
+                                <span class="rated-text">| Rated 5.0</span>
+                            </div>
+    
+                            <img src="../assets/trustpilot_stars.svg" alt="trustpilot_stars" class="h-10 mb-1">
+                            <p class="text-white text-[1em]">Based on <span class="underline">2484 reviews</span></p>
+                        </a>
+    
+                        <a href="https://www.sellcell.com/blog/you-can-now-sell-locked-phones-here-at-sellcell/"
+                            target="_blank">
+                            <img src="../assets/logo-cellsell.png" alt="cellsell" class="cellsell-logo">
+                        </a>
+                    </div>
+    
+                    <!-- top Arrow  -->
+                    <div id="to-top-arrow" class="to-top-arrow">
+                        <a data-scroll data-options="{ &quot;easing&quot;: &quot;easeOutCubic&quot; }" href="#top">
+                            <i class="fas fa-arrow-up"></i>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="flex flex-col">
+                    <h3 class="footer-title text-center md:text-right">About Us</h3>
+    
+                    <div class="flex flex-col md:flex-row gap-[6px] md:gap-24">
+                        <ul class="footer-menu">
+                            <li><a href="#" class="footer-menu-item">Home</a></li>
+                            <li><a href="#" class="footer-menu-item">How It Works</a></li>
+                            <li><a href="./contact-us.html" class="footer-menu-item">Contact Us</a></li>
+                            <li><a href="#" class="footer-menu-item">Blog</a></li>
+                        </ul>
+    
+                        <ul class="footer-menu">
+                            <li><a href="./faqs.html" class="footer-menu-item">FAQ</a></li>
+                            <li><a href="./terms-condition.html" class="footer-menu-item">Terms and Conditions</a></li>
+                            <li><a href="./privacy-policy.html" class="footer-menu-item">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer-copyright">
+                <p>© 2024 Global Guru Tech, LLC | All Rights Reserved</p>
+            </div>
+        </footer>
+        <!-- ------------------ Footer End -->
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

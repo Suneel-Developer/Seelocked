@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SellLoacked</title>
+
+    <!-- Font Awesome Icon Link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Cutome CSS & tailwind css  -->
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <!-- --------------------------- Header Start  -->
+    <header class="header" id="top">
+        <div class="header-container">
+            <div class="menu-toggle" id="toggleMenu">
+                <img src="./assets/toggle-icon.svg" alt="toggle-icon">
+            </div>
+            <a href="#" class="logo-link">
+                <img src="./assets/logo.png" alt="SellLoacked Logo" class="logo">
+            </a>
+
+            <a href="./pages/cart.html" class="navlink-mobile cart-link">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="cart-item">2</span>
+            </a>
+
+            <!-- Nav Links  -->
+            <ul class="nav-links">
+                <li><a href="#" class="navlink"><i class="fa fa-home"></i></a></li>
+                <li><a href="#" class="navlink">How It Works</a></li>
+                <li><a href="./pages/faqs.html" class="navlink">FAQ</a></li>
+                <li><a href="./pages/contact-us.html" class="navlink">Contact Us</a></li>
+                <li><a href="#" class="navlink">Get Started Now</a></li>
+                <li>
+                    <a href="./pages/cart.html" class="navlink cart-link">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-item">2</span>
+                    </a>
+                </li>
+            </ul>
+
+
+
+            <!-- Mobile Navigation Menu  -->
+            <div id="mobileMenu" class="mobileMenu hidden z-40">
+                <button id="closeMenu" class="text-white ml-auto text-xl">
+                    <i class="fa fa-times"></i>
+                </button>
+                <ul class="mobile-nav-links">
+                    <li><a href="#" class="navlink text-white"><i class="fa fa-home"></i></a></li>
+                    <li><a href="#" class="navlink text-white">How It Works</a></li>
+                    <li><a href="./pages/faqs.html" class="navlink text-white">FAQ</a></li>
+                    <li><a href="./pages/contact-us.html" class="navlink text-white">Contact Us</a></li>
+                    <li><a href="#" class="navlink text-white">Get Started Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- --------------------------- Header End  -->
+
+
+
+    <!------------------------------ Hero Section Start  -->
+    <section id="hero" class="hero-container">
+        <div class="hero">
+            <div class="hero-content">
+                <h1 class="text-3xl md:text-[40px] text-center md:text-start text-[#d55227] font-semibold mb-10">Sell
+                    Your New or Used Device!</h1>
+                <ul class="flex flex-col gap-2">
+                    <li class="text-[#5a7283] text-[1em] md:text-[1.5em]"><i
+                            class="fa fa-check text-[#00b67a] mr-2"></i>Financed</li>
+                    <li class="text-[#5a7283] text-[1em] md:text-[1.5em]"><i
+                            class="fa fa-check text-[#00b67a] mr-2"></i>Blacklisted/Blocked</li>
+                    <li class="text-[#5a7283] text-[1em] md:text-[1.5em]"><i
+                            class="fa fa-check text-[#00b67a] mr-2"></i>Activation Locked</li>
+                    <li class="text-[#5a7283] text-[1em] md:text-[1.5em]"><i
+                            class="fa fa-check text-[#00b67a] mr-2"></i>No Locks</li>
+                </ul>
+
+                <a href="https://www.trustpilot.com/review/ibuylocked.com" class="trustpilot" target="_blank">
+                    <div class="flex items-center gap-2 mb-2">
+                        <img src="./assets/trustpilot-logo.svg" alt="trustpilot-logo" class="w-[110px]">
+                        <span class="rated-text">| Rated 5.0</span>
+                    </div>
+
+                    <img src="./assets/trustpilot_stars.svg" alt="trustpilot_stars" class="h-10 mb-1">
+                    <p class="text-[#d55227] text-[1em]">Based on <span class="underline">2484 reviews</span></p>
+                </a>
+            </div>
+            <div class="hero-image">
+                <img src="./assets/iphone-top-header-mobile-bg.webp" alt="iPhone Image" id="hero-iphone" class="hero-image">
+                <img src="./assets/ipad-top-header-bg.webp" alt="iPad Image" id="hero-ipad" class="hidden">
+                <img src="./assets/watch-top-header-bg.webp" alt="Watch Image" id="hero-watch" class="hidden">
+                <img src="./assets/galaxy-top-header-bg.webp" alt="Galaxy Image" id="hero-galaxy" class="hidden">
+            </div>
+        </div>
+    </section>
+    <!------------------------------ Hero Section End  -->
+
+
+    <!------------------------------ Product Tabs Start  -->
+    <section>
+        <h1 class="text-center mt-20 text-3xl font-medium mb-10 px-4">Select your device below to get started</h1>
+        <div class="flex overflow-x-auto gap-3 md:gap-6 bg-white justify-start sm:justify-center px-4 no-scrollbar">
+            <button data-tab="iphone" class="producttab-btn productsactive">
+                iphone
+            </button>
+
+            <button data-tab="ipad" class="producttab-btn">
+                ipad
+            </button>
+
+            <button data-tab="watch" data-active-img="./assets/white-iphone-logo.svg"
+                data-inactive-img="./assets/black-iphone-logo.svg" class="producttab-btn">
+                <img src="./assets/black-iphone-logo.svg" alt="watch icon" class="tab-icon">
+                watch
+            </button>
+
+            <button data-tab="galaxy" class="producttab-btn">
+                Galaxy
+            </button>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="px-4 py-10 mb-10">
+            <!-- iphone Products  -->
+            <ul id="iphone" class="producttab-content productsactive">
+                <li>
+                    <a href="./pages/offer-details.html" class="product-item">
+                        <img src="./assets/AppleiPhone15ProMax.webp" alt="AppleiPhone15ProMax" class="product-img">
+                        <h3 class="product-name">iPhone 15 Pro Max</h3>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./pages/offer-details.html" class="product-item">
+                        <img src="./assets/AppleiPhone15Pro.webp" alt="Phone15Pro" class="product-img">
+                        <h3 class="product-name">iPhone 15 Pro</h3>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./pages/offer-details.html" class="product-item">
+                        <img src="./assets/AppleiPhone15Plus.webp" alt="AppleiPhone15Plus" class="product-img">
+                        <h3 class="product-name">iPhone 15 Plus</h3>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./pages/offer-details.html" class="product-item">
+                        <img src="./assets/AppleiPhone15.webp" alt="AppleiPhone15" class="product-img">
+                        <h3 class="product-name">iPhone 15</h3>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./pages/offer-details.html" class="product-item">
+                        <img src="./assets/AppleiPhone14ProMax.webp" alt="AppleiPhone14ProMax" class="product-img">
+                        <h3 class="product-name">iPhone 14 Pro Max</h3>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./pages/offer-details.html" class="product-item">
+                        <img src="./assets/AppleiPhone14Pro.webp" alt="AppleiPhone14Pro" class="product-img">
+                        <h3 class="product-name">iPhone 14 Pro</h3>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./pages/offer-details.html" class="product-item">
+                        <img src="./assets/AppleiPhone14Plus.webp" alt="AppleiPhone14Plus" class="product-img">
+                        <h3 class="product-name">iPhone 14 Plus</h3>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./pages/offer-details.html" class="product-item">
+                        <img src="./assets/AppleiPhone14.webp" alt="AppleiPhone14" class="product-img">
+                        <h3 class="product-name">iPhone 14</h3>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./pages/offer-details.html" class="product-item">
+                        <img src="./assets/AppleiPhone13ProMax.webp" alt="AppleiPhone13ProMax" class="product-img">
+                        <h3 class="product-name">iPhone 13 Pro Max</h3>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./pages/offer-details.html" class="product-item">
+                        <img src="./assets/AppleiPhone13Pro.webp" alt="AppleiPhone13Pro" class="product-img">
+                        <h3 class="product-name">iPhone 13 Pro</h3>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./pages/offer-details.html" class="product-item">
+                        <img src="./assets/AppleiPhone13.webp" alt="AppleiPhone13" class="product-img">
+                        <h3 class="product-name">iPhone 13</h3>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Ipad products  -->
+            <ul id="ipad" class="producttab-content">
+                <li>
+                    <a href="./pages/offer-details.html" class="product-item">
+                        <img src="./assets/iPadPro13inch.webp" alt="iPadPro13inch" class="product-img">
+                        <h3 class="product-name">iPad Pro 13-inch</h3>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./pages/offer-details.html" class="product-item">
+                        <img src="./assets/iPadPro129inch.webp" alt="iPadPro129inch" class="product-img">
+                        <h3 class="product-name">iPad Pro 12.9-inch</h3>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./pages/offer-details.html" class="product-item">
+                        <img src="./assets/iPadPro11inch.webp" alt="iPadPro11inch" class="product-img">
+                        <h3 class="product-name">iPad Pro 11-inch</h3>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./pages/offer-details.html" class="product-item">
+                        <img src="./assets/iPadAir.webp" alt="iPadAir" class="product-img">
+                        <h3 class="product-name">iPad Air</h3>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./pages/offer-details.html" class="product-item">
+                        <img src="./assets/iPad.webp" alt="iPad" class="product-img">
+                        <h3 class="product-name">iPad</h3>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./pages/offer-details.html" class="product-item">
+                        <img src="./assets/iPadmini.webp" alt="iPadmini" class="product-img">
+                        <h3 class="product-name">iPad mini</h3>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Watch products  -->
+            <ul id="watch" class="producttab-content">
+                <li>
+                    <a href="./pages/offer-details.html" class="product-item">
+                        <img src="./assets/AppleWatchUltra2.webp" alt="AppleWatchUltra2" class="product-img">
+                        <h3 class="product-name">Watch Ultra 2</h3>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./pages/offer-details.html" class="product-item">
+                        <img src="./assets/AppleWatchUltra.webp" alt="AppleWatchUltra" class="product-img">
+                        <h3 class="product-name">Watch Ultra</h3>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./pages/offer-details.html" class="product-item">
+                        <img src="./assets/AppleWatchSeries9.webp" alt="AppleWatchSeries9" class="product-img">
+                        <h3 class="product-name">Watch Series 9</h3>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./pages/offer-details.html" class="product-item">
+                        <img src="./assets/AppleWatchSeries8.webp" alt="AppleWatchSeries8" class="product-img">
+                        <h3 class="product-name">Watch Series 8</h3>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./pages/offer-details.html" class="product-item">
+                        <img src="./assets/AppleWatchSeries7.webp" alt="AppleWatchSeries7" class="product-img">
+                        <h3 class="product-name">Watch Series 7</h3>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./pages/offer-details.html" class="product-item">
+                        <img src="./assets/AppleWatchSeries6.webp" alt="AppleWatchSeries6" class="product-img">
+                        <h3 class="product-name">Watch Series 6</h3>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./pages/offer-details.html" class="product-item">
+                        <img src="./assets/AppleWatchSE2ndGen.webp" alt=AppleWatchSE2ndGen" class="product-img">
+                        <h3 class="product-name">Watch SE 2nd Gen</h3>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./pages/offer-details.html" class="product-item">
+                        <img src="./assets/AppleWatchSE.webp" alt="AppleWatchSE" class="product-img">
+                        <h3 class="product-name">Watch SE</h3>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./pages/offer-details.html" class="product-item">
+                        <img src="./assets/AppleWatchSeries5.webp" alt="AppleWatchSeries5" class="product-img">
+                        <h3 class="product-name">Watch Series 5</h3>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Galaxy Products  -->
+            <ul id="galaxy" class="producttab-content">
+                <li>
+                    <a href="./pages/offer-details.html" class="product-item">
+                        <img src="./assets/GalaxySSeries.webp" alt="GalaxySSeries" class="product-img">
+                        <h3 class="product-name">Galaxy S Series</h3>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./pages/offer-details.html" class="product-item">
+                        <img src="./assets/GalaxyZFoldSeries.webp" alt="GalaxyZFoldSeries" class="product-img">
+                        <h3 class="product-name">Galaxy Z Fold Series</h3>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./pages/offer-details.html" class="product-item">
+                        <img src="./assets/GalaxyZFlipSeries.webp" alt="GalaxyZFlipSeries" class="product-img">
+                        <h3 class="product-name">Galaxy Z Flip Series</h3>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./pages/offer-details.html" class="product-item">
+                        <img src="./assets/GalaxyNoteSeries.webp" alt="GalaxyNoteSeries" class="product-img">
+                        <h3 class="product-name">Galaxy Note Series</h3>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!------------------------------ Product Tabs Ends  -->
+
+
+    <!-- How It Works start  -->
+    <section class="px-4 bg-[#f7f7f7] py-14">
+        <h2 class="how-it-works-title">Here's How It Works</h2>
+        <p class="how-it-works-subtitle">We pay top rates for your device in any condition in 3 simple steps!</p>
+
+        <div class="steps-container">
+            <div class="step">
+                <img src="./assets/icon-step1.png" alt="icon-step1" class="step-img">
+                <h3 class="step-title">Get a Payout Quote</h3>
+                <p class="step-subtitle">Provide info about your phone to get a Payout Quote. Just click Get Started to
+                    begin.
+                </p>
+            </div>
+
+            <div class="step">
+                <img src="./assets/icon-step2.png" alt="icon-step2" class="step-img">
+                <h3 class="step-title">Ship Your Phone for FREE</h3>
+                <p class="step-subtitle">Ship SellLocked your phone with the shipping label that we provide you.</p>
+            </div>
+
+            <div class="step">
+                <img src="./assets/icon-step3.png" alt="icon-step3" class="step-img">
+                <h3 class="step-title">Get Paid Fast!</h3>
+                <p class="step-subtitle">Within 1 to 5 business days of receiving your phone you get paid!</p>
+            </div>
+        </div>
+    </section>
+    <!-- How It Works End  -->
+
+
+
+    <!-- ------------------ Footer Start -->
+    <footer class="footer">
+
+        <div class="footer-container">
+            <div>
+                <h3 class="footer-title">Sell with Confidence!</h3>
+
+                <div class="flex gap-5">
+                    <a href="https://www.trustpilot.com/review/ibuylocked.com" class="footer-trustpilot"
+                        target="_blank">
+                        <div class="flex items-center gap-2 mb-2">
+                            <img src="./assets/trustpilot-white-logo.svg" alt="trustpilot-logo" class="w-[110px]">
+                            <span class="rated-text">| Rated 5.0</span>
+                        </div>
+
+                        <img src="./assets/trustpilot_stars.svg" alt="trustpilot_stars" class="h-10 mb-1">
+                        <p class="text-white text-[1em]">Based on <span class="underline">2484 reviews</span></p>
+                    </a>
+
+                    <a href="https://www.sellcell.com/blog/you-can-now-sell-locked-phones-here-at-sellcell/"
+                        target="_blank">
+                        <img src="./assets/logo-cellsell.png" alt="cellsell" class="cellsell-logo">
+                    </a>
+                </div>
+
+                <!-- top Arrow  -->
+                <div id="to-top-arrow" class="to-top-arrow">
+                    <a data-scroll data-options="{ &quot;easing&quot;: &quot;easeOutCubic&quot; }" href="#top">
+                        <i class="fas fa-arrow-up"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <h3 class="footer-title text-center md:text-right">About Us</h3>
+
+                <div class="flex flex-col md:flex-row gap-[6px] md:gap-24">
+                    <ul class="footer-menu">
+                        <li><a href="#" class="footer-menu-item">Home</a></li>
+                        <li><a href="#" class="footer-menu-item">How It Works</a></li>
+                        <li><a href="./pages/contact-us.html" class="footer-menu-item">Contact Us</a></li>
+                        <li><a href="#" class="footer-menu-item">Blog</a></li>
+                    </ul>
+
+                    <ul class="footer-menu">
+                        <li><a href="./pages/faqs.html" class="footer-menu-item">FAQ</a></li>
+                        <li><a href="./pages/terms-condition.html" class="footer-menu-item">Terms and Conditions</a>
+                        </li>
+                        <li><a href="./pages/privacy-policy.html" class="footer-menu-item">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <p>© 2024 Global Guru Tech, LLC | All Rights Reserved</p>
+        </div>
+    </footer>
+    <!-- ------------------ Footer End -->
+
+
+
+
+
+    <!-- --------- JavaScript link  -->
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

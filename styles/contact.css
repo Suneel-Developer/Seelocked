@@ -1,0 +1,97 @@
+.contact {
+    padding: 50px 16px 100px;
+}
+
+
+.heading {
+    text-align: center;
+    color: #d55227;
+    font-size: 2.5em;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.card {
+    cursor: pointer;
+}
+
+.card-row {
+    position: relative;
+    top: 0;
+    transition: all .25s ease-in-out;
+}
+
+.card-row:hover {
+    top: -5px;
+}
+
+.card-mg {
+    height: 42px;
+    margin: 0 auto;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+
+.inactive {
+    opacity: 50%;
+}
+
+
+.no-phone-container {
+    max-width: 1200px;
+    margin: 50px auto 0px;
+}
+
+
+.no-phone-header {
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.no-phone-content {
+    font-size: 14px;
+    opacity: 70%;
+    max-width: 880px;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    .heading {
+        font-size: 2em;
+    }
+
+    .contact-container {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 50px;
+    }
+
+    .card-mg {
+        height: 35px;
+    }
+
+    .card-title {
+        font-size: 16px;
+    }
+
+    .no-phone-header {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SellLocked</title>
+
+
+    <!-- Font Awesome Icon Link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Cutome CSS & tailwind css  -->
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/offer-details.css">
+</head>
+
+<body>
+    <!-- --------------------------- Header Start  -->
+    <header class="header" id="top">
+        <div class="header-container">
+            <div class="menu-toggle" id="toggleMenu">
+                <img src="../assets/toggle-icon.svg" alt="toggle-icon">
+            </div>
+
+            <a href="../index.html" class="logo-link">
+                <img src="../assets/logo.png" alt="SellLoacked Logo" class="logo">
+            </a>
+
+            <a href="./cart.html" class="navlink-mobile cart-link">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="cart-item">2</span>
+            </a>
+
+            <!-- Nav Links  -->
+            <ul class="nav-links">
+                <li><a href="../index.html" class="navlink"><i class="fa fa-home"></i></a></li>
+                <li><a href="../index.html" class="navlink">How It Works</a></li>
+                <li><a href="./faqs.html" class="navlink">FAQ</a></li>
+                <li><a href="./contact-us.html" class="navlink">Contact Us</a></li>
+                <li><a href="../index.html" class="navlink">Get Started Now</a></li>
+                <li>
+                    <a href="./cart.html" class="navlink cart-link">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-item">2</span>
+                    </a>
+                </li>
+            </ul>
+
+
+
+            <!-- Mobile Navigation Menu  -->
+            <div id="mobileMenu" class="mobileMenu hidden z-40">
+                <button id="closeMenu" class="text-white ml-auto text-xl">
+                    <i class="fa fa-times"></i>
+                </button>
+                <ul class="mobile-nav-links">
+                    <li><a href="../index.html" class="navlink text-white"><i class="fa fa-home"></i></a></li>
+                    <li><a href="../index.html" class="navlink text-white">How It Works</a></li>
+                    <li><a href="./faqs.html" class="navlink text-white">FAQ</a></li>
+                    <li><a href="./contact-us.html" class="navlink text-white">Contact Us</a></li>
+                    <li><a href="../index.html" class="navlink text-white">Get Started Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- --------------------------- Header End  -->
+
+
+
+    <!------------------------------ Product Tabs Start  -->
+    <section class="offer-details">
+        <h1 class="heading">Please select your device's status</h1>
+
+        <div class="tab-container">
+            <div class="flex  gap-3 bg-white justify-start overflow-x-auto sm:justify-between no-scrollbar mb-4">
+                <button class="tab-button" data-target="no-locks">No Locks</button>
+                <button class="tab-button active" data-target="financed">Financed</button>
+                <button class="tab-button" data-target="blacklisted">Blacklisted/Blocked</button>
+                <button class="tab-button" data-target="activation-locked">Activation Locked</button>
+            </div>
+
+            <!-- Tab Content -->
+            <div>
+                <div class="tab-content" id="no-locks">
+                    <h2 class="subheading">No Locks</h2>
+                    <p class="disc">
+                        A device under this status should not have any lock types associated with it. Additionally, the
+                        following should all be true:
+                    </p>
+
+                    <ul class="listed-option">
+                        <li>Fully paid off with no money owed to any carriers or leasing entities</li>
+                        <li>IMEI status must be clean</li>
+                        <li>Free from association with any iCloud, Find-My-iPhone account(s), or lock screen passcodes
+                        </li>
+                    </ul>
+
+                    <p class="noted">
+                        Note for AT&T devices: Try unlocking your device via AT&Ts website. If the device is unable to
+                        be unlocked, it will not fall under our “No Locks” status.
+                    </p>
+                </div>
+
+
+                <div class="tab-content active" id="financed">
+                    <h2 class="subheading">Financed</h2>
+                    <p class="disc">
+                        A device under this status can have a remaining balance owed to a carrier or other leasing
+                        entity. In short, the following is true:
+                    </p>
+
+                    <ul class="listed-option">
+                        <li>A device that is not fully paid off</li>
+                        <li>Under finance / money still owed</li>
+                        <li>IMEI status must be clean</li>
+                        <li>Free from association with any iCloud, Find-My-iPhone account(s), or lock screen passcode
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-content" id="blacklisted">
+                    <h2 class="subheading">Blacklisted/Blocked</h2>
+                    <p class="disc">
+                        A device under this status can be blacklisted and/or blocked by a carrier or other third-party
+                        entity. In short, you can select this status if your device is:
+                    </p>
+
+                    <ul class="listed-option">
+                        <li>On a permanent “blacklist” either globally or by a carrier</li>
+                        <li>Blacklisted and/or blocked for any reason </li>
+                        <li>Bad ESN</li>
+                        <li>
+                            Unable to be used on a cellular network as a result of a blacklist/block and not a hardware
+                            malfunction
+                        </li>
+                        <li>
+                            Free from association with any iCloud, Find-My-iPhone account(s), or lock screen passcode
+                        </li>
+                    </ul>
+
+                    <p class="noted">
+                        Note: If your device is unable to move past the activation screen, please select “activation
+                        locked” as your status.
+                    </p>
+                </div>
+
+                <div class="tab-content" id="activation-locked">
+                    <h2 class="subheading">Activation Locked</h2>
+                    <p class="disc">
+                        This lock type is also commonly referred to as “iCloud Locked”. A device under this status is
+                        usually unable to move past its activation screen or its lock screen. “Demo” devices and devices
+                        with a “mobile device management” lock also fall under this category. In short:
+                    </p>
+
+                    <ul class="listed-option">
+                        <li>Any device that is unable to move past its activation screen</li>
+                        <li>Any device that has a passcode lock on its lock screen</li>
+                        <li>Any device with any iCloud or Find-My-iPhone account(s) associated with it</li>
+                        <li>A device that has a “mobile device management” or “MDM” lock</li>
+                        <li>“Demo” model devices</li>
+                    </ul>
+                    <p class="noted">Note: It is OK if your device is also blacklisted/blocked.</p>
+                </div>
+            </div>
+
+            <a href="./offer-summary.html" class="next-btn">
+                Next Step
+            </a>
+        </div>
+    </section>
+
+    <!------------------------------ Product Tabs Ends  -->
+
+
+
+
+    <!-- ------------------ Footer Start -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div>
+                <h3 class="footer-title">Sell with Confidence!</h3>
+
+                <div class="flex gap-5">
+                    <a href="https://www.trustpilot.com/review/ibuylocked.com" class="footer-trustpilot"
+                        target="_blank">
+                        <div class="flex items-center gap-2 mb-2">
+                            <img src="../assets/trustpilot-white-logo.svg" alt="trustpilot-logo" class="w-[110px]">
+                            <span class="rated-text">| Rated 5.0</span>
+                        </div>
+
+                        <img src="../assets/trustpilot_stars.svg" alt="trustpilot_stars" class="h-10 mb-1">
+                        <p class="text-white text-[1em]">Based on <span class="underline">2484 reviews</span></p>
+                    </a>
+
+                    <a href="https://www.sellcell.com/blog/you-can-now-sell-locked-phones-here-at-sellcell/"
+                        target="_blank">
+                        <img src="../assets/logo-cellsell.png" alt="cellsell" class="cellsell-logo">
+                    </a>
+                </div>
+
+                <!-- top Arrow  -->
+                <div id="to-top-arrow" class="to-top-arrow">
+                    <a data-scroll data-options="{ &quot;easing&quot;: &quot;easeOutCubic&quot; }" href="#top">
+                        <i class="fas fa-arrow-up"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <h3 class="footer-title text-center md:text-right">About Us</h3>
+
+                <div class="flex flex-col md:flex-row gap-[6px] md:gap-24">
+                    <ul class="footer-menu">
+                        <li><a href="#" class="footer-menu-item">Home</a></li>
+                        <li><a href="#" class="footer-menu-item">How It Works</a></li>
+                        <li><a href="./contact-us.html" class="footer-menu-item">Contact Us</a></li>
+                        <li><a href="#" class="footer-menu-item">Blog</a></li>
+                    </ul>
+
+                    <ul class="footer-menu">
+                        <li><a href="./faqs.html" class="footer-menu-item">FAQ</a></li>
+                        <li><a href="./terms-condition.html" class="footer-menu-item">Terms and Conditions</a></li>
+                        <li><a href="./privacy-policy.html" class="footer-menu-item">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <p>© 2024 Global Guru Tech, LLC | All Rights Reserved</p>
+        </div>
+    </footer>
+    <!-- ------------------ Footer End -->
+
+
+
+
+    <!-- --------- JavaScript link  -->
+    <script src="../js/script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>

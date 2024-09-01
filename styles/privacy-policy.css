@@ -1,0 +1,46 @@
+.privacy-policy {
+    padding: 80px 16px 100px;
+}
+
+.privacy-policy-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.heading {
+    color: #d55227;
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+
+.privacy-policy-container ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.privacy-policy-container li {
+    color: #464646;
+    font-size: 1em;
+    padding: 3px 0;
+}
+
+.privacy-policy-container li b {
+    font-weight: 500;
+    color: black;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .heading {
+        font-size: 1.7em;
+    }
+
+
+    .privacy-policy-container li {
+        font-size: 14px;
+        padding: 2px 0;
+    }
+}

@@ -1,0 +1,282 @@
+.offer-summary {
+    padding: 50px 16px 100px;
+    position: relative;
+}
+
+.offer-sumamry-container {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.left-side {
+    width: 65%;
+}
+
+.heading {
+    color: #d55227;
+    font-size: 2.2em;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.disc {
+    color: #788292;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.question-heading {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+/* Base styles for the buttons */
+.btn-option {
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+    border: 2px solid #eee;
+    background-color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: .2rem;
+}
+
+/* Active state styles */
+.btn-option.active {
+    background-color: #3b7aa4;
+    border: 2px solid #3b7aa4;
+    color: white;
+}
+
+.btns-option {
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+    border: 2px solid #eee;
+    background-color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: .2rem;
+}
+
+/* Active state styles */
+.btns-option.active {
+    background-color: #3b7aa4;
+    border: 2px solid #3b7aa4;
+    color: white;
+}
+
+/* styles.css */
+.hidden {
+    display: none;
+}
+
+
+.select-carrier {
+    border: 1px solid #eee;
+    border-radius: .4rem;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+.active {
+    border-color: red; 
+}
+
+
+.select-carrier img {
+    height: 50px;
+    opacity: 70%;
+}
+
+.select-carrier:hover img {
+    opacity: 100%;
+}
+
+.storage-option {
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    position: relative;
+    border: 2px solid #eee;
+    background-color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: .2rem;
+}
+
+.storage-option:hover {
+    background-color: #3b7aa4;
+    border: 2px solid #3b7aa4;
+    color: white;
+}
+
+.condition-option {
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    position: relative;
+    border: 2px solid #eee;
+    background-color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: .2rem;
+    min-width: fit-content;
+    width: fit-content;
+}
+
+.condition-option:hover {
+    background-color: #3b7aa4;
+    border: 2px solid #3b7aa4;
+    color: white;
+}
+
+.select-conditions {
+    background-color: #f4f2f269;
+    border: 1px solid #e3e6e9fc;
+    border-radius: .3rem;
+    padding: 20px;
+}
+
+.new-option {
+    padding: 10px 20px;
+    border: 2px solid #eee;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: .2rem;
+}
+
+/* Active state styles */
+.new-option.active {
+    background-color: #3b7aa4;
+    border-color: #3b7aa4;
+    color: white;
+}
+
+
+.option-listed {
+    margin-left: 20px;
+    list-style: disc;
+}
+
+.option-listed li {
+    color: #3b7aa4;
+    font-size: 16px;
+}
+
+.right-side {
+    width: 35%;
+    border: 1px solid #D0D5DD;
+    background-color: #f6f6f6;
+    padding: 20px;
+    border-radius: .4rem;
+    position: sticky;
+    top: 40px;
+    height: fit-content;
+}
+
+.characteristics {
+    list-style: none;
+    margin-top: 40px;
+    font-size: 15px;
+    color: #6f747d;
+}
+
+.characteristics li b {
+    font-weight: 600;
+    font-size: 14px;
+    color: #333;
+}
+
+
+.btn-primary {
+    background-color: #d55227;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    transition: all .25s ease-in-out;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.btn-primary:hover {
+    background-color: #ff4900;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .offer-sumamry-container {
+        gap: 80px;
+        flex-direction: column;
+    }
+
+    .left-side {
+        width: 100%;
+    }
+
+    .heading {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    .question-heading {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .select-carrier {
+        padding: 10px;
+    }
+
+    .select-carrier img {
+        height: 40px;
+    }
+
+    .storage-option {
+        padding: 10px 20px;
+    }
+
+    .select-conditions {
+        padding: 15px;
+    }
+
+    .new-option {
+        padding: 10px 20px;
+    }
+
+    .right-side {
+        width: 100%;
+    }
+    }
+
+ 

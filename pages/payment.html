@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SellLoacked</title>
+
+
+    <!-- Font Awesome Icon Link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Cutome CSS & tailwind css  -->
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/payment.css">
+</head>
+
+<body>
+    <!-- --------------------------- Header Start  -->
+    <header class="header" id="top">
+        <div class="header-container">
+            <div class="menu-toggle" id="toggleMenu">
+                <img src="../assets/toggle-icon.svg" alt="toggle-icon">
+            </div>
+            <a href="../index.html" class="logo-link">
+                <img src="../assets/logo.png" alt="SellLoacked Logo" class="logo">
+            </a>
+
+            <a href="./cart.html" class="navlink-mobile cart-link">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="cart-item">2</span>
+            </a>
+
+            <!-- Nav Links  -->
+            <ul class="nav-links">
+                <li><a href="../index.html" class="navlink"><i class="fa fa-home"></i></a></li>
+                <li><a href="../index.html" class="navlink">How It Works</a></li>
+                <li><a href="./faqs.html" class="navlink">FAQ</a></li>
+                <li><a href="./contact-us.html" class="navlink">Contact Us</a></li>
+                <li><a href="../index.html" class="navlink">Get Started Now</a></li>
+                <li>
+                    <a href="./cart.html" class="navlink cart-link">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-item">2</span>
+                    </a>
+                </li>
+            </ul>
+
+
+
+            <!-- Mobile Navigation Menu  -->
+            <div id="mobileMenu" class="mobileMenu hidden z-40">
+                <button id="closeMenu" class="text-white ml-auto text-xl">
+                    <i class="fa fa-times"></i>
+                </button>
+                <ul class="mobile-nav-links">
+                    <li><a href="../index.html" class="navlink text-white"><i class="fa fa-home"></i></a></li>
+                    <li><a href="../index.html" class="navlink text-white">How It Works</a></li>
+                    <li><a href="./faqs.html" class="navlink text-white">FAQ</a></li>
+                    <li><a href="./contact-us.html" class="navlink text-white">Contact Us</a></li>
+                    <li><a href="../index.html" class="navlink text-white">Get Started Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- --------------------------- Header End  -->
+
+
+
+
+
+    <section class="payment">
+        <div class="payment-container">
+
+            <!-- Navigation  -->
+            <ul class="nav-tabs">
+                <li><a href="./cart.html" class="nav-item">Cart <span>></span></a></li>
+                <li><a href="./my-info.html" class="nav-item">My Info <span>></span></a></li>
+                <li class="nav-item text-[#d55227]">Payment <span>></span></li>
+                <li class="nav-item">Confrim</li>
+            </ul>
+
+
+            <h1 class="heading">Payment</h1>
+            <h3 class="subheading">How would you like to be paid?</h3>
+            <p class="disc">Payment is issued within 1-5 business days (usually under 48 hours) after your package has
+                been delivered</p>
+
+            <div class="boxcontainer">
+                <div>
+                    <ul>
+                        <!-- Venmo Payment Method -->
+                        <li class="payment-option" data-method="venmo">
+                            <div class="checkbox-wrap">
+                                <input type="radio" name="payment-method" id="venmo-radio">
+                                <img src="../assets/venmo-icon.png" alt="venmo-icon" class="payment-icon">
+                            </div>
+                            <p>Payment directly to your Venmo account</p>
+                        </li>
+
+                        <!-- PayPal Payment Method -->
+                        <li class="payment-option" data-method="paypal">
+                            <div class="checkbox-wrap">
+                                <input type="radio" name="payment-method" id="paypal-radio">
+                                <img src="../assets/paypal-icon.png" alt="paypal-icon" class="payment-icon">
+                            </div>
+                            <p>Payment directly to your PayPal account</p>
+                        </li>
+
+                        <!-- Check Payment Method -->
+                        <li class="payment-option" data-method="check">
+                            <div class="checkbox-wrap">
+                                <input type="radio" name="payment-method" id="check-radio">
+                                <img src="../assets/check-icon.png" alt="check-icon" class="payment-icon">
+                            </div>
+                            <p>Delivered by mail within 1-10 business days</p>
+                        </li>
+                    </ul>
+
+
+                    <!-- for desktop devices & it hide at mobile screens  -->
+                    <div class="hidden md:block">
+                        <p class="total-payout">Total Payout Offer: $1,700.00</p>
+
+                        <div class="order-summary">
+                            <div class="offer-summary-btn" id="toggle-details-arrow">
+                                <p>Hide offer summary</p>
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            </div>
+
+                            <!-- Details list, hidden by default -->
+                            <ul id="details-list" class="hidden order-summary-dropdown">
+                                <li>Quantity: <b>4</b></li>
+                                <li>Model: <b>Apple-iPhone 15 Pro</b></li>
+                                <li>Storage: <b>256GB</b></li>
+                                <li>Status: <b>Financed</b></li>
+                                <li>Condition: <b>New Sealed</b></li>
+                                <li>Damages: <b>None</b></li>
+                                <li>Carrier: <b>T-Mobile</b></li>
+                                <li>Price per device: <b>$425.00</b></li>
+                            </ul>
+                        </div>
+
+                        <a href="./confrim.html" id="next-step-btn" class="btn-gray" disabled>Next Step</a>
+                    </div>
+
+                </div>
+
+                <div>
+                    <!-- Venmo details -->
+                    <div id="venmo-details" class="payment-details hidden">
+                        <input type="text" value="(480) 607-3388" placeholder="Venmo Phone No. *" class="input">
+                        <input type="text" placeholder="Confirm Your Venmo Phone No. *" class="input">
+                    </div>
+
+                    <!-- PayPal details -->
+                    <div id="paypal-details" class="payment-details hidden">
+                        <input type="email" placeholder="PayPal Email *" class="input">
+                        <input type="email" placeholder="Confirm PayPal Email *" class="input">
+                    </div>
+
+                    <!-- Check details -->
+                    <div id="check-details" class="payment-details hidden">
+                        <p class="payable-to-lable">Payable to:</p>
+                        <input type="text" placeholder="Full Name *" class="input">
+                        <p class="check-question">Where would you like your check to be sent?</p>
+
+                        <div class="use-shipping-info">
+                            <input type="checkbox" id="use-shipping-checkbox" checked>
+                            <p>Use shipping info</p>
+                        </div>
+
+                        <!-- Predefined address, hidden by default -->
+                        <ul id="predefined-address" class="hidden payment-address">
+                            <li>15205 N KIERLAND BLVD</li>
+                            <li>15205 NORTH KIERLAND BLVD. SUITE 100</li>
+                            <li>SCOTTSDALE, AZ 85254-8169</li>
+                            <li>UNITED STATES</li>
+                        </ul>
+
+                        <!-- Manual address input form, hidden by default -->
+                        <div id="manual-address-form" class="hidden">
+                            <form data-form="my-information" class="my-information-form">
+                                <input type="text" class="input" name="address_one" autocomplete="off"
+                                    placeholder="Address Line 1 *" required>
+                                <input type="text" class="input" name="address_two" autocomplete="off"
+                                    placeholder="Address Line 2 (optional)" maxlength="50">
+                                <input type="text" class="input" name="myInfoZipCode" autocomplete="off"
+                                    placeholder="ZIP Code * 00000 or 00000-0000" maxlength="10">
+                                <input type="text" class="input" name="town_name" autocomplete="off"
+                                    placeholder="City *" required>
+                                <select class="custom-select" id="state" name="state_name" required>
+                                    <option value="" disabled="" selected="">State *</option>
+                                    <option value="AL">AL-Alabama</option>
+                                    <option value="AK">AK-Alaska</option>
+                                    <option value="AZ">AZ-Arizona</option>
+                                    <option value="AR">AR-Arkansas</option>
+                                    <option value="CA">CA-California</option>
+                                    <option value="CO">CO-Colorado </option>
+                                    <option value="CT">CT-Connecticut </option>
+                                    <option value="DE">DE-Delaware </option>
+                                    <option value="DC">DC-District of Columbia </option>
+                                    <option value="FL"> FL-Florida </option>
+                                    <option value="GA">GA-Georgia </option>
+                                    <option value="HI"> HI-Hawaii </option>
+                                    <option value="ID">ID-Idaho </option>
+                                    <option value="IL">IL-Illinois </option>
+                                    <option value="IN">IN-Indiana </option>
+                                    <option value="IA"> IA-Iowa </option>
+                                    <option value="KS">KS-Kansas </option>
+                                    <option value="KY"> KY-Kentucky </option>
+                                    <option value="LA"> LA-Louisiana </option>
+                                    <option value="ME"> ME-Maine </option>
+                                    <option value="MD"> MD-Maryland </option>
+                                    <option value="MA"> MA-Massachusetts </option>
+                                    <option value="MI"> MI-Michigan </option>
+                                    <option value="MN">MN-Minnesota </option>
+                                    <option value="MS">MS-Mississippi </option>
+                                    <option value="MO"> MO-Missouri </option>
+                                    <option value="MT"> MT-Montana </option>
+                                    <option value="NE">NE-Nebraska </option>
+                                    <option value="NV">NV-Nevada </option>
+                                    <option value="NH">NH-New Hampshire </option>
+                                    <option value="NJ"> NJ-New Jersey </option>
+                                    <option value="NM">NM-New Mexico </option>
+                                    <option value="NY">NY-New York </option>
+                                    <option value="NC">NC-North Carolina </option>
+                                    <option value="ND">ND-North Dakota </option>
+                                    <option value="OH">OH-Ohio </option>
+                                    <option value="OK">OK-Oklahoma </option>
+                                    <option value="OR">OR-Oregon </option>
+                                    <option value="PA">PA-Pennsylvania </option>
+                                    <option value="RI">RI-Rhode Island </option>
+                                    <option value="SC">SC-South Carolina </option>
+                                    <option value="SD">SD-South Dakota </option>
+                                    <option value="TN">TN-Tennessee </option>
+                                    <option value="TX">TX-Texas </option>
+                                    <option value="UT">UT-Utah </option>
+                                    <option value="VT">VT-Vermont </option>
+                                    <option value="VA"> VA-Virginia </option>
+                                    <option value="WA">WA-Washington </option>
+                                    <option value="WV">WV-West Virginia </option>
+                                    <option value="WI">WI-Wisconsin </option>
+                                    <option value="WY">WY-Wyoming </option>
+                                </select>
+                                <label class="label-disabled">United States</label>
+                                <div class="flex items-center text-sm gap-1 text-[#b2b5bb]">
+                                    We are unable to mail checks outside of the United States.
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <!-- for mobile devices & it hide at desktop screens  -->
+            <div class="block md:hidden">
+                <p class="total-payout">Total Payout Offer: $1,700.00</p>
+
+                <div class="order-summary">
+                    <div class="offer-summary-btn" id="toggle-details-arrow2">
+                        <p>Show offer summary</p>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+
+
+                    <!-- Details list, hidden by default -->
+                    <ul id="details-list2" class="hidden order-summary-dropdown">
+                        <li>Quantity: <b>4</b></li>
+                        <li>Model: <b>Apple-iPhone 15 Pro</b></li>
+                        <li>Storage: <b>256GB</b></li>
+                        <li>Status: <b>Financed</b></li>
+                        <li>Condition: <b>New Sealed</b></li>
+                        <li>Damages: <b>None</b></li>
+                        <li>Carrier: <b>T-Mobile</b></li>
+                        <li>Price per device: <b>$425.00</b></li>
+                    </ul>
+                </div>
+
+                <a href="./confrim.html" id="next-step-btn" class="btn-gray bg-[#d55227]">Next Step</a>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ------------------ Footer Start -->
+    <footer class="footer">
+
+        <div class="footer-container">
+            <div>
+                <h3 class="footer-title">Sell with Confidence!</h3>
+
+                <div class="flex gap-5">
+                    <a href="https://www.trustpilot.com/review/ibuylocked.com" class="footer-trustpilot"
+                        target="_blank">
+                        <div class="flex items-center gap-2 mb-2">
+                            <img src="../assets/trustpilot-white-logo.svg" alt="trustpilot-logo" class="w-[110px]">
+                            <span class="rated-text">| Rated 5.0</span>
+                        </div>
+
+                        <img src="../assets/trustpilot_stars.svg" alt="trustpilot_stars" class="h-10 mb-1">
+                        <p class="text-white text-[1em]">Based on <span class="underline">2484 reviews</span></p>
+                    </a>
+
+                    <a href="https://www.sellcell.com/blog/you-can-now-sell-locked-phones-here-at-sellcell/"
+                        target="_blank">
+                        <img src="../assets/logo-cellsell.png" alt="cellsell" class="cellsell-logo">
+                    </a>
+                </div>
+
+                <!-- top Arrow  -->
+                <div id="to-top-arrow" class="to-top-arrow">
+                    <a data-scroll data-options="{ &quot;easing&quot;: &quot;easeOutCubic&quot; }" href="#top">
+                        <i class="fas fa-arrow-up"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <h3 class="footer-title text-center md:text-right">About Us</h3>
+
+                <div class="flex flex-col md:flex-row gap-[6px] md:gap-24">
+                    <ul class="footer-menu">
+                        <li><a href="../index.html" class="footer-menu-item">Home</a></li>
+                        <li><a href="../index.html" class="footer-menu-item">How It Works</a></li>
+                        <li><a href="./contact-us.html" class="footer-menu-item">Contact Us</a></li>
+                        <li><a href="#" class="footer-menu-item">Blog</a></li>
+                    </ul>
+
+                    <ul class="footer-menu">
+                        <li><a href="./faqs.html" class="footer-menu-item">FAQ</a></li>
+                        <li><a href="./terms-condition.html" class="footer-menu-item">Terms and Conditions</a></li>
+                        <li><a href="./privacy-policy.html" class="footer-menu-item">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <p>© 2024 Global Guru Tech, LLC | All Rights Reserved</p>
+        </div>
+    </footer>
+    <!-- ------------------ Footer End -->
+
+
+
+
+
+    <!-- --------- JavaScript link  -->
+    <script src="../js/script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>

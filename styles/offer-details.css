@@ -1,0 +1,166 @@
+.offer-details {
+    padding: 50px 16px 100px;
+}
+
+.heading {
+    font-size: 1.6em;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #d55227;
+}
+
+
+
+.tab-container {
+    max-width: 840px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+.tab-button {
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    min-width: 200px;
+    width: 200px;
+    height: 50.5px;
+    position: relative;
+    border: 2px solid #9ccef0;
+    background-color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 9px;
+}
+
+.tab-button:hover {
+    background-color: #3b7aa4;
+    border: 2px solid #3b7aa4;
+    color: white;
+}
+
+
+.tab-button.active {
+    background-color: #3b7aa4;
+    border: 2px solid #3b7aa4;
+    color: white;
+}
+
+.tab-button.active::before {
+    border-left: 10px solid rgba(0, 0, 0, 0);
+    border-right: 10px solid rgba(0, 0, 0, 0);
+    border-top: 10px solid #3b7aa4;
+    content: "";
+    height: 0;
+    left: 45%;
+    position: absolute;
+    top: 48px;
+    width: 0;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+    background-color: #f4f2f269;
+    border: 1px solid #e3e6e9fc;
+    padding: 25px;
+    width: 100%;
+    border-radius: .3rem;
+}
+
+
+.subheading {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.disc {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.listed-option {
+    margin-left: 20px;
+    list-style: disc;
+    margin-bottom: 40px;
+}
+
+.listed-option li {
+    color: #3b7aa4;
+    font-size: 16px;
+}
+
+.noted{
+    font-size: 14px;
+    border: 1px solid #eee;
+    padding: 12px;
+    border-radius: 4px;
+}
+
+
+
+
+.next-btn {
+    background-color: #d55227;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 12px 15px;
+    transition: all .25s ease-in-out;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.next-btn:hover {
+    background-color: #ff4900;
+
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    
+    .heading {
+        font-size: 1.2em;
+    }
+    
+    .tab-button {
+        min-width: fit-content;
+        width: fit-content;
+        padding: 12px 20px;
+    }
+    
+    .tab-content.active {
+        padding: 15px 10px;
+    }
+    
+    
+    .subheading {
+        font-size: 1.5rem;
+    }
+    
+    .disc {
+        font-size: 14px;
+    }
+    
+    .listed-option li {
+        font-size: 14px;
+    }
+    
+    .noted{
+        padding: 8px;
+    }
+    
+}

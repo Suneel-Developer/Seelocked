@@ -1,0 +1,177 @@
+.cart-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+}
+
+
+.cart-items {
+    width: 75%;
+}
+
+.cart-item {
+    display: flex;
+    gap: 15px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.cart-item .product-img {
+    height: 190px;
+}
+
+
+.product-details-wrap {
+    font-size: 14px;
+}
+
+.product-details-wrap strong {
+    font-weight: 600;
+}
+
+.product-quantity {
+    display: flex;
+    border: 1px solid #E6E6E6;
+    border-radius: 4px;
+    align-items: center;
+    height: 32px;
+}
+
+.quantity-btns {
+    padding: 0 8px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.quantity-input {
+    border: none;
+    outline: none;
+    min-width: 24px;
+    width: 24px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.quantity-input::placeholder {
+    color: black;
+}
+
+.edit-btn {
+    border: 1px solid #E6E6E6;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 26px;
+    text-align: center;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 2px 8px;
+    transition: .5s;
+}
+
+.edit-btn:hover {
+   border: 1px solid #333;
+}
+
+
+.cart-details {
+    width: 25%;
+}
+
+.proceed-btn {
+    width: 100%;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color .25s ease-in-out;
+    background-color: #d55227;
+    border-radius: 10px;
+    font-size: 1.2em;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.proceed-btn:hover {
+    background-color: #ff4900;
+}
+
+.quantity-btns.disabled {
+    cursor: not-allowed; 
+    opacity: 0.5; 
+}
+
+.quantity-btns[disabled] {
+    pointer-events: none; 
+}
+
+
+.add-btn {
+    display: block;
+    transition: color .25s ease-in-out;
+    font-size: 1em;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.add-btn:hover {
+    opacity: 80%;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .cart-container {
+        flex-direction: column;
+        gap: 100px;
+    }
+
+
+    .cart-items {
+        width: 100%;
+    }
+
+    .cart-item {
+        gap: 10px;
+    }
+
+    .cart-item .product-img {
+        height: 170px;
+    }
+
+
+    .product-details-wrap {
+        font-size: 12px;
+    }
+
+    .product-details-wrap strong {
+        font-weight: 600;
+    }
+
+    .product-quantity {
+        height: 25px;
+    }
+
+    .quantity-btns {
+        padding: 0 6px;
+    }
+
+    .quantity-input {
+        min-width: 20px;
+        width: 20px;
+    }
+
+
+    .cart-details {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}

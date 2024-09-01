@@ -1,0 +1,171 @@
+.confrim-address {
+    padding: 60px 16px 200px;
+}
+
+.confrim-address-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-tabs {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.nav-item {
+    color: #8a8887;
+    font-weight: 500;
+    white-space: nowrap;
+    font-size: 1em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-item span {
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.heading {
+    color: #d55227;
+    font-size: 2.2em;
+    font-weight: 400;
+}
+
+.subheading {
+    color: #222;
+    font-size: 1.5em;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.disc {
+    color: #788292;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+
+.suggested-address {
+    background-color: #eee;
+    padding: 20px;
+    border-radius: .3rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+    max-width: 500px;
+    cursor: pointer;
+}
+
+.suggested-address input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #d55227;
+}
+
+.suggested-address ul {
+    flex: 1;
+}
+
+.suggested-address ul li {
+    font-size: 15px;
+    color: #788292;
+}
+
+.btns-section {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.btns-section a {
+    background-color: #d55227;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    transition: all .25s ease-in-out;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btns-section a:hover {
+    background-color: #ff4900;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .confrim-address {
+        padding: 50px 16px 200px;
+    }
+    
+    .heading {
+        font-size: 1.8em;
+    }
+    
+    .subheading {
+        font-size: 1.2em;
+    }
+    
+    .disc {
+        font-size: 13px;
+    }
+    
+    
+    .suggested-address {
+        padding: 20px 10px;
+        gap: 10px;
+    }
+    
+    .suggested-address ul li {
+        font-size: 13px;
+    }
+    
+    .btns-section {
+        display: flex;
+        gap: 20px;
+        margin-top: 30px;
+    }
+    
+    .btns-section a {
+        background-color: #d55227;
+        border-radius: 4px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 1.2rem;
+        padding: 10px 15px;
+        transition: all .25s ease-in-out;
+        width: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .btns-section a:hover {
+        background-color: #ff4900;
+    }
+    
+
+    .nav-tabs{
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .nav-item {
+        font-size: .8em;
+    }
+    
+    .nav-item span {
+        font-size: 1em;
+    }
+}

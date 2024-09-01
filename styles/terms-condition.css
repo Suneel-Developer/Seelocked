@@ -1,0 +1,44 @@
+.terms-condition{
+    padding: 80px 16px 100px;
+}
+
+.terms-condition-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.heading{
+    color: #d55227;
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.subttitle{
+    font-size: 16px;
+    color: #222;
+    margin-bottom: 25px;
+    opacity: 90%;
+}
+
+.title{
+    font-size: 22px;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .heading{
+        font-size: 1.7em;
+    }
+    
+    .subttitle{
+        font-size: 15px;
+    }
+    
+    .title{
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,44 @@
+
+
+.order-completed{
+    padding: 60px 16px 200px;
+}
+
+.order-completed-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.order-completed-container h2{
+    color: #d55227;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.order-completed-container h3{
+    color: #222;
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.order-completed-container h3 b{
+    font-weight: 600;
+}
+
+.order-completed-container img{
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+
+.order-completed{
+    padding: 50px 16px 100px;
+}
+
+}
